@@ -7,7 +7,7 @@ Authors@R:
     role = c("aut", "cre", "cph"),
     comment = c(ORCID = "0000-0002-1625-2822"))
 Description: Provides a graphical user interface with an 
-    integrated diagrammer for latent variables from the 'lavaan' package. 
+    integrated diagrammer for latent variable models from the 'lavaan' package. 
     It offers two core functions:  first, lavaangui() launches a web application
     that allows users to specify models by drawing path diagrams, fitting them, 
     assessing model fit, and more; second, plot_lavaan() creates 
