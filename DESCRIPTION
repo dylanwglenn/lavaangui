@@ -1,13 +1,13 @@
 Package: lavaangui
 Title: Graphical User Interface with Integrated 'Diagrammer' for 'Lavaan'
-Version: 0.2.4.9000
+Version: 0.2.6.9000
 Authors@R: 
     person(c("Julian",  "D."), "Karch",
     email = "j.d.karch@fsw.leidenuniv.nl", 
     role = c("aut", "cre", "cph"),
     comment = c(ORCID = "0000-0002-1625-2822"))
 Description: Provides a graphical user interface with an 
-    integrated diagrammer for latent variables from the 'lavaan' package. 
+    integrated diagrammer for latent variable models from the 'lavaan' package. 
     It offers two core functions:  first, lavaangui() launches a web application
     that allows users to specify models by drawing path diagrams, fitting them, 
     assessing model fit, and more; second, plot_lavaan() creates 
