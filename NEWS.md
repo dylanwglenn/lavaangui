@@ -1,3 +1,14 @@
+# lavaangui 0.3.0
+- Bugfix: Width of dialog windows is now more reasonable. Was caused by a CSS bug
+- Bugfix: Intendation of intercept syntax correct now
+- Playwright testing only done on local version now
+- Switch to lavaan 0.6-20 for the webserver versions
+- Directed arrow from latent to observed variable can be marked as factor loading or regression coefficient
+- Line style can be changed between solid, dashed, and dotted
+- Added: Allow renaming nodes and edges in plot_lavaan
+
+
+
 # lavaangui 0.2.6
 - Bugfix: `plot_lavaan()` after `efa` is now working
 - Bugfix: Avoid crashing when data("estimates") for an edge is undefined
