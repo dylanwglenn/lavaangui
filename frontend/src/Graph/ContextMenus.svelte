@@ -186,6 +186,28 @@
       hasTrailingDivider: false,
     },
     {
+      id: "edit-fixed-para",
+      content: "Change Fixed Value",
+      selector: `edge.${Constants.FIXED}.${Constants.FROM_USER}`,
+      onClickFunction: function (event) {
+        const edge = event.target || event.cyTarget;
+        // @ts-expect-error
+        bootbox.prompt({
+          title: "Enter a New Value",
+          inputType: "number",
+          step: "any",
+          value: edge.data("value"), // if you store it
+          callback: function (value) {
+            if (value !== null && value !== "") {
+              edge.fixPara(value);
+              tolavaan($modelOptions.mode);
+            }
+          },
+        });
+      },
+      show: "full",
+    },
+    {
       id: "free-para",
       content: "Free Parameter",
       selector: `edge.${Constants.FIXED}.${Constants.FROM_USER}, edge.${Constants.FORCE_FREE}.${Constants.FROM_USER}`,
