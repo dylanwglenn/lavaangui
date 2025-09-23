@@ -49,7 +49,9 @@ export const graphStyles = [
   {
     selector: `node.${Constants.LATENT}`,
     style: {
-      shape: "ellipse",
+      shape: function (ele) {
+        return ele.data("shape") || "ellipse";
+      },
       "border-color": "black",
     },
   },

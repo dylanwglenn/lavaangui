@@ -66,6 +66,9 @@
         setAlert("success", `Variable ${node.getLabel()} linked to data`);
       }
     }
+    if (node.isLatent()) {
+      node.data("shape", "ellipse");
+    }
     if ($appState.modelEmpty && cy.edges().length > 0) {
       $appState.modelEmpty = false;
     }

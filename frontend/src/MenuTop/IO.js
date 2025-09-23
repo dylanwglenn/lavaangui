@@ -80,8 +80,15 @@ export function parseModel(content) {
         checkNodeLoop(node.id());
     });
 
+    // things to do for backward compatibility
     cy.edges().forEach((edge) => {
         edge.checkAndMarkPotentialLatObReg()
+    });
+
+    cy.getLatentNodes().forEach((node) => {
+        if (!node.data("shape")) {
+            node.data("shape", "ellipse");
+        }
     });
 
     appState.update(state => {

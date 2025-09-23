@@ -571,6 +571,40 @@
       },
     },
     {
+      id: "change-shape-hexagon",
+      content: "Change Shape to Hexagon",
+      selector: `node[shape = "ellipse"]`,
+      show: "both",
+      onClickFunction: function (event) {
+        var target = event.target || event.cyTarget;
+        const toChange = getChange(target, "nodes");
+        if (toChange === null) {
+          return null;
+        }
+        $ur.do("style", {
+          eles: toChange,
+          style: { shape: "hexagon" },
+        });
+      },
+    },
+    {
+      id: "change-shape-ellipse",
+      content: "Change Shape to Ellipse",
+      selector: `node[shape = "hexagon"]`,
+      show: "both",
+      onClickFunction: function (event) {
+        var target = event.target || event.cyTarget;
+        const toChange = getChange(target, "nodes");
+        if (toChange === null) {
+          return null;
+        }
+        $ur.do("style", {
+          eles: toChange,
+          style: { shape: "ellipse" },
+        });
+      },
+    },
+    {
       id: "color-node",
       content: "Change Background Color",
       selector: "node",

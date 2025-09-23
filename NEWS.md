@@ -6,6 +6,7 @@
 - Directed arrow from latent to observed variable can be marked as factor loading or regression coefficient
 - Line style can be changed between solid, dashed, and dotted
 - Added: Allow renaming nodes and edges in plot_lavaan
+- Added: Switch latent variable appearance between ellipse and rectangle
 
 
 
