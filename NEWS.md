@@ -2,6 +2,7 @@
 - Bugfix: Width of dialog windows is now more reasonable. Was caused by a CSS bug
 - Bugfix: Indentation of intercept syntax correct now
 - Bugfix: Hotkey that deactivates drawing is listened to everywhere now
+- Bugfix: plot_lavaan now works also if do.fit = FALSE
 - Playwright testing only done on local version now
 - Switch to lavaan 0.6-20 for the webserver versions
 - Directed arrow from latent to observed variable can be marked as factor loading or regression coefficient
