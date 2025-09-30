@@ -1,12 +1,14 @@
 # lavaangui 0.3.0
 - Bugfix: Width of dialog windows is now more reasonable. Was caused by a CSS bug
-- Bugfix: Intendation of intercept syntax correct now
+- Bugfix: Indentation of intercept syntax correct now
+- Bugfix: Hotkey that deactivates drawing is listened to everywhere now
 - Playwright testing only done on local version now
 - Switch to lavaan 0.6-20 for the webserver versions
 - Directed arrow from latent to observed variable can be marked as factor loading or regression coefficient
 - Line style can be changed between solid, dashed, and dotted
 - Added: Allow renaming nodes and edges in plot_lavaan
 - Added: Switch latent variable appearance between ellipse and rectangle
+- Added: Change fixed values context menu
 
 
 

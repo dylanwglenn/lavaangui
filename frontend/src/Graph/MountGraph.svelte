@@ -86,14 +86,14 @@
     }
   }
 
+  document.addEventListener("keyup", handleKeyUp);
+
   function handleMouseOver() {
     document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("keyup", handleKeyUp);
   }
 
   function handleMouseOut() {
     document.removeEventListener("keydown", handleKeyDown, false);
-    document.removeEventListener("keyup", handleKeyUp, false);
   }
 
   function handleMousemove(event) {
@@ -132,7 +132,7 @@
       return;
     }
 
-    edge.checkAndMarkPotentalLatObReg();
+    edge.checkAndMarkPotentialLatObReg();
 
     //only one directed edge from constant
     if (edge.isDirected() && sourceNode.isConstant()) {
