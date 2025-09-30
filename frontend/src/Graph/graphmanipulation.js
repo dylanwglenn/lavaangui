@@ -100,6 +100,9 @@ export function addEdge(source, target, directed = true, fixed = false, fixedVal
     },
     classes: `${directed ? DIRECTED : UNDIRECTED} ${fromUser ? FROM_USER : FROM_LAV} ${fixed ? FIXED : FREE} ${NOT_LABEL}`
   });
+  if (fromUser) {
+    edge.checkAndMarkPotentialLatObReg();
+  }
   return edge;
 }
 
