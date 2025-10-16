@@ -1,6 +1,6 @@
 Package: lavaangui
 Title: Graphical User Interface with Integrated 'Diagrammer' for 'Lavaan'
-Version: 0.2.6.9000
+Version: 0.3.0
 Authors@R: 
     person(c("Julian",  "D."), "Karch",
     email = "j.d.karch@fsw.leidenuniv.nl", 
@@ -36,6 +36,6 @@ Imports:
     digest (>= 0.6.35)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Date: 2025-08-19
 Language: en-US
