@@ -172,7 +172,7 @@ setMethod("semPlotModel_S4",signature("lavaan"),function(object){
     manifest = c(varNames,factNames)%in%varNames,
     exogenous = NA,
     stringsAsFactors=FALSE)
-  call_obj <- lavTech(fit, "call")
+  call_obj <- lavTech(object, "call")
   if(!("do.fit" %in% names(call_obj)) || call_obj$do.fit){
     if (lavInspect(object, "options")$conditional.x){
       semModel@ObsCovs <- lapply(lavTech(object, "sampstat"),"[[","res.cov")
